@@ -1,0 +1,62 @@
+{
+  "name": "EastcodeSessionsRN",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "metro": "lsof -ti:8081 | xargs kill && react-native start --reset-cache",
+    "android": "react-native run-android",
+    "ios": "cd ios; pod install; cd ..; react-native run-ios --simulator='iPhone 11 Pro'",
+    "start": "react-native start",
+    "test": "jest",
+    "lint": "eslint .",
+    "prestorybook": "rnstl",
+    "storybook": "start-storybook -p 7007"
+  },
+  "dependencies": {
+    "react": "16.9.0",
+    "react-native": "0.61.5",
+    "react-native-config": "^0.12.0",
+    "styled-components": "^5.0.0-rc.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.7.5",
+    "@babel/preset-flow": "^7.7.4",
+    "@babel/runtime": "^7.7.6",
+    "@react-native-community/cli": "^3.0.4",
+    "@react-native-community/eslint-config": "^0.0.5",
+    "@storybook/addon-actions": "^5.2.8",
+    "@storybook/addon-links": "^5.2.8",
+    "@storybook/addon-storyshots": "^5.2.8",
+    "@storybook/addons": "^5.2.8",
+    "@storybook/react-native": "^5.2.8",
+    "@storybook/react-native-server": "^5.2.8",
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^10.0.3",
+    "babel-jest": "^24.9.0",
+    "babel-loader": "^8.0.6",
+    "eslint": "^6.7.2",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-config-prettier": "^6.7.0",
+    "eslint-plugin-import": "^2.19.1",
+    "eslint-plugin-react": "^7.17.0",
+    "eslint-plugin-react-native": "^3.8.1",
+    "flow-bin": "^0.114.0",
+    "jest": "^24.9.0",
+    "metro-react-native-babel-preset": "^0.57.0",
+    "react-dom": "16.9.0",
+    "react-native-storybook-loader": "^1.8.1",
+    "react-test-renderer": "16.9.0"
+  },
+  "jest": {
+    "preset": "react-native"
+  },
+  "config": {
+    "react-native-storybook-loader": {
+      "searchDir": [
+        "./src"
+      ],
+      "pattern": "**/*.story.js",
+      "outputFile": "./storybook/storyLoader.js"
+    }
+  }
+}
