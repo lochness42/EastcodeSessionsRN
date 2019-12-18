@@ -11,7 +11,7 @@ export const Container = styled.View`
 `;
 
 export const Text = styled.Text`
-  color: ${({ error }) => (error ? 'red' : '#002233')};
+  color: #002233;
   font-style: italic;
   font-weight: bold;
 `;

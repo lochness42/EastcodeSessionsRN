@@ -1,16 +1,18 @@
 module.exports = {
-  presets: ["module:metro-react-native-babel-preset", "@babel/preset-flow"],
+  presets: ['module:metro-react-native-babel-preset', '@babel/preset-flow'],
   plugins: [
     [
-      "module-resolver",
+      'module-resolver',
       {
-        root: ["./src"],
+        root: ['./src'],
         alias: {
-          test: "./test",
-          underscore: "lodash",
-          components: "./src/components"
-        }
-      }
-    ]
-  ]
+          test: './test',
+          underscore: 'lodash',
+          components: './src/components',
+          contexts: './src/contexts',
+          screens: './src/screens',
+        },
+      },
+    ],
+  ],
 };

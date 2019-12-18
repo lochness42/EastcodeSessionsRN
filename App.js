@@ -4,16 +4,16 @@
  * @flow
  */
 
-import React from "react";
-import { SafeAreaView, StatusBar } from "react-native";
+import React from 'react';
+import { SafeAreaView, StatusBar } from 'react-native';
 
-import Home from "./src/screens/home/Home";
+import Home from 'screens/home/Home';
 
 const App: () => React$Node = () => {
   return (
     <>
       <StatusBar barStyle="dark-content" />
-      <SafeAreaView>
+      <SafeAreaView style={{ flex: 1 }}>
         <Home />
       </SafeAreaView>
     </>

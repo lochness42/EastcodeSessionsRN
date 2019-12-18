@@ -1,5 +1,5 @@
-import { getStorybookUI, configure } from "@storybook/react-native";
-import { loadStories } from "./storyLoader";
+import { getStorybookUI, configure } from '@storybook/react-native';
+import { loadStories } from './storyLoader';
 
 configure(() => {
   loadStories();
@@ -9,7 +9,8 @@ configure(() => {
 // To find allowed options for getStorybookUI
 const StorybookUI = getStorybookUI({
   port: 7007,
-  onDeviceUI: true
+  onDeviceUI: true,
+  asyncStorage: null,
 });
 
 export default StorybookUI;

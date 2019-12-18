@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Header Default 1`] = `
+<View
+  style={
+    Array [
+      Object {},
+    ]
+  }
+>
+  <Text>
+    Header Dummy Text
+  </Text>
+</View>
+`;
