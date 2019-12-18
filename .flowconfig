@@ -4,15 +4,13 @@
 
 ; Ignore unexpected extra "@providesModule"
 .*/node_modules/.*/node_modules/fbjs/.*
-; .*/node_modules/
+.*/node_modules/
 
 ; Ignore duplicate module providers
 ; For RN Apps installed via npm, "Libraries" folder is inside
 ; "node_modules/react-native" but in the source repo it is in the root
 ; .*/node_modules/react-native
 .*/node_modules/react-native/Libraries/react-native/react-native-implementation.js
-;.*/Libraries/react-native/React.js
-;.*/Libraries/react-native/ReactNative.js
 
 ; Ignore polyfills
 .*/Libraries/polyfills/.*
@@ -108,8 +106,3 @@ untyped-import
 untyped-type-import
 
 [untyped]
-
-.*/node_modules/react-native/Libraries/vendor/core/ErrorUtils.js
-
-[version]
-^0.114.0

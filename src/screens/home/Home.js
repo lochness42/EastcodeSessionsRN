@@ -1,15 +1,16 @@
 // @flow
-import Content from "components/content/Content";
-import { View, Text } from "react-native";
+import React from 'react';
+import Header from 'components/header/Header';
+import Content from 'components/content/Content';
 
 type Props = {|
-  text?: string
+  name?: string,
 |};
 
-const Home = ({ text }: Props) => <Content />;
+const Home = ({ name }: Props) => <Content name={name} />;
 
 Home.defaultProps = {
-  text: `There's no place like home`
+  name: `Pavel`,
 };
 
 export default Home;

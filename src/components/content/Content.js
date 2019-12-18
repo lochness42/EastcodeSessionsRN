@@ -1,21 +1,17 @@
 // @flow
 import React from 'react';
-import { Text } from 'react-native';
 
-import { ContentContainer } from './Content.styles';
+import { Container, Text } from './Content.styles';
 
 type Props = {
-  text?: string,
+  name: string,
+  error?: boolean,
 };
 
-const Content = ({ text = 'hi' }: Props) => (
-  <ContentContainer>
-    <Text>{`Content Component ${text}`}</Text>
-  </ContentContainer>
+const Content = ({ name }: Props) => (
+  <Container>
+    <Text error={error}>{`Hi ${name} welcome to Eastcode Sessions`}</Text>
+  </Container>
 );
-
-Content.defaultProps = {
-  text: 'is very cool!',
-};
 
 export default Content;
