@@ -1,0 +1,10 @@
+{
+  "preset": "react-native",
+  "transform": {
+    "^.+\\.js$": "<rootDir>/node_modules/react-native/jest/preprocessor.js"
+  },
+  "transformIgnorePatterns": ["node_modules/(?!|react-native/.*)"],
+  "moduleNameMapper": {
+    "styled-components": "<rootDir>/node_modules/styled-components/native/dist/styled-components.native.cjs.js"
+  }
+}
