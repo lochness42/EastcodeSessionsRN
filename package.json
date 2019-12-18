@@ -13,8 +13,7 @@
     "storyshots": "jest --config jest.config.json storyshots.test.js",
     "lint": "eslint .",
     "prestorybook": "rnstl",
-    "storybook": "start-storybook -p 7007",
-    "kf": "killall -9 flow"
+    "storybook": "start-storybook -p 7007"
   },
   "dependencies": {
     "@react-native-community/async-storage": "^1.7.1",
