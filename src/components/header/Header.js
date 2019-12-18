@@ -4,9 +4,9 @@ import { ErrorContext } from 'contexts/errorContext';
 import Button from 'components/button/Button';
 import { Container, Text } from './Header.styles';
 
-type Props = {
+type Props = {|
   onButtonPress: () => void,
-};
+|};
 const Header = ({ onButtonPress }: Props) => {
   const error = useContext(ErrorContext);
   return (

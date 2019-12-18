@@ -4,9 +4,9 @@ import { ErrorContext } from 'contexts/errorContext';
 
 import { Container, Text } from './Content.styles';
 
-type Props = {
+type Props = {|
   name: string,
-};
+|};
 
 const Content = ({ name }: Props) => {
   const error = useContext(ErrorContext);
